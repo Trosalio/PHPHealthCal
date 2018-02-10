@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="author" content="Thanapong Supalak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Calculator</title>
+    <link rel="stylesheet" type="text/css" href="ui.css">
+</head>
+<body>
+<!--Header-->
+<header>Health Calculator</header>
+<!--Content-->
+<div id="content">
+    <div class="wrapper">
+        <!--Selector Panel-->
+        <div id="selector-panel">
+            <fieldset id="selector-field">
+                <legend>Select your calculator option!</legend>
+                <label>
+                    <select name="calculatorOptions" id="calculatorOptions" onchange="changePanel(this.value)">
+                        <option value="" selected disabled>Please Select Something...</option>
+                        <option value="bmi">Body Mass Index</option>
+                        <option value="bmr">Basal Metabolic Rate</option>
+                        <option value="ccl">Cholesterol</option>
+                    </select>
+                </label>
+            </fieldset>
+        </div>
+        <!--Form Panel-->
+        <div id="form-panel"></div>
+    </div>
+    <div class="wrapper">
+        <!--Formula Panel-->
+        <div id="formula-panel"></div>
+        <!--Result Panel-->
+        <div id="result-panel"></div>
+    </div>
+</div>
+
+<!--Loading Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="common-script.js"></script>
+</body>
+</html>

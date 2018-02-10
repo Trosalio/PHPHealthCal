@@ -1,0 +1,35 @@
+<!--Form Template-->
+<form id="form" action="CCLCalculator.php" method="get">
+    <fieldset>
+        <legend>Cholesterol Calculator</legend>
+
+        <label>
+            Low Density Lipoprotein (miligrams per deciliter):<br>
+            <input type="number" name="ldl" required>
+        </label>
+        <br><br>
+        <label>
+            High Density Lipoprotein (miligrams per deciliter):<br>
+            <input type="number" name="hdl" required>
+        </label>
+        <br><br>
+        <label>
+            Triglycerides (miligrams per deciliter):<br>
+            <input type="number" name="tg" required>
+        </label>
+        <br><br>
+        <input class="submit button" type="submit" value="calculate">
+    </fieldset>
+</form>
+
+<!--Formula Template-->
+<fieldset id="formula">
+    <legend>Cholesterol Formula</legend>
+    <p>ค่าคอเลสเตอรอล = ค่า LDL(kg) + ค่า HDL + (ค่า Triglycerides ÷ 5)</p>
+</fieldset>
+
+<!--Result Template-->
+<fieldset id="result">
+    <legend>Cholesterol Result</legend>
+    <div></div>
+</fieldset>
